@@ -1,0 +1,162 @@
+/*Обнуление*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+:root {
+    --background-color: rgb(13, 17, 23);
+    --main-color: rgb(22, 27, 34);
+}
+
+.github { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    min-height: 700px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--main-color);
+    box-shadow: 0 0 35px 2px rgb(5, 7, 8);
+}
+
+.github__profile { 
+    width: 350px;
+}
+
+.github__name { 
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.github__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github__avatar img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    margin: 30px 0 15px;
+    font-size: 18px;
+}
+
+.btn { 
+    font-size: 18px;
+    font-weight: bold;
+    width: 350px;
+    height: 40px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: rgb(134, 134, 134);
+}
+.btn:active {
+    position: relative;
+    top: 2px;
+}
+
+.github__link {
+    text-decoration: none;
+    pointer-events: all;
+}
+.github__link:visited {
+    color: inherit;
+}
+.github__link:link {
+    color: inherit;
+}
